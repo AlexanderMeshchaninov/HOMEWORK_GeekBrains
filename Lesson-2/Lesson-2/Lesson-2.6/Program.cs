@@ -45,8 +45,9 @@ namespace Lesson_2._6
                 //вариант второй
                 //например узнать определенный день работы - вторник
 
-                bool isWork = (officeOneMask & WorkingWeek.Вторник) == WorkingWeek.Вторник;
-                if (isWork)
+                //bool isWork_officeOne = (officeOneMask & WorkingWeek.Воскресенье) == WorkingWeek.Воскресенье;
+                bool isWork_officeTwo = (officeTwoMask & WorkingWeek.Воскресенье) == WorkingWeek.Воскресенье;
+                if (isWork_officeTwo)
                 {
                     Console.WriteLine("Офис работает!");
                 }
